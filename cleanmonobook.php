@@ -46,7 +46,7 @@ class SkinCleanmonobook extends SkinTemplate {
 		parent::setupSkinUserCss( $out );
 
 		// Append to the default screen common & print styles...
-		$out->addStyle( 'ichick/main.css', 'screen' );
+		$out->addStyle( 'cleanmonobook/main.css', 'screen' );
 		$out->addStyle( 'monobook/rtl.css', 'screen', '', 'rtl' );
 	}
 }

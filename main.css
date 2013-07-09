@@ -971,7 +971,7 @@ div#userloginForm .captcha {
 }
 
 .printfooter {
-	display: none;
+	margin-top: 1em;
 }
 
 .not-patrolled {

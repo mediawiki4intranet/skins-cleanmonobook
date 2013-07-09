@@ -125,6 +125,7 @@ class CleanmonobookTemplate extends QuickTemplate {
 			<?php if($this->data['newtalk'] ) { ?><div class="usermessage"><?php $this->html('newtalk')  ?></div><?php } ?>
 			<?php if($this->data['showjumplinks']) { ?><div id="jump-to-nav"><?php $this->msg('jumpto') ?> <a href="#column-one"><?php $this->msg('jumptonavigation') ?></a>, <a href="#searchInput"><?php $this->msg('jumptosearch') ?></a></div><?php } ?>
 			<!-- start content -->
+			<?php $this->data['bodytext'] = preg_replace_callback( '#<div class="printfooter">(.*?)</div#is', function( $m ) { return preg_replace( '#&amp;oldid=\d+#', '', $m[0] ); }, $this->data['bodytext'] ); ?>
 			<?php $this->html('bodytext') ?>
 			<?php if($this->data['catlinks']) { $this->html('catlinks'); } ?>
 			<!-- end content -->

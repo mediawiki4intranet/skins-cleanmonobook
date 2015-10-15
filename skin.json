@@ -1,0 +1,32 @@
+{
+	"name": "Clean Monobook",
+	"author": [
+		"Vitaliy Filippov",
+		"..."
+	],
+	"url": "http://wiki.4intra.net/CleanMonobook",
+	"description": "Export monobook-based skin without nagivation links",
+	"name": "CleanMonobook",
+	"license-name": "GPL-2.0+",
+	"type": "skin",
+	"ValidSkinNames": {
+		"cleanmonobook": "CleanMonobook"
+	},
+	"ResourceModules": {
+		"skins.cologneblue": {
+			"position": "top",
+			"styles": {
+				"main.css": { "media": "screen" }
+			}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "cleanmonobook"
+	},
+	"AutoloadClasses": {
+		"SkinCleanMonobook": "cleanmonobook.php",
+		"CleanMonobookTemplate": "cleanmonobook.php"
+	},
+	"manifest_version": 1
+}

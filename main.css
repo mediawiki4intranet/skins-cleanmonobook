@@ -112,61 +112,6 @@ table.rimage {
 	padding: 0;
 }
 
-/*
-** the personal toolbar
-*/
-#p-personal {
-	float: right;
-}
-
-#p-personal h3 {
-	display: none;
-}
-
-/* this is the ul contained in the portlet */
-#p-personal ul {
-	border: none;
-	line-height: 1.4em;
-	color: #2f6fab;
-	padding: 0;
-	padding-right: 2em;
-	/* Avoid overlap with the logo. */
-	padding-left: 14em;
-	margin: 0;
-	text-align: right;
-	list-style-type: none;
-	list-style-image: none;
-	z-index: 0;
-	background: none;
-	cursor: default;
-}
-
-#p-personal li {
-	z-index: 0;
-	border: none;
-	padding: 0;
-	display: inline;
-	color: #2f6fab;
-	margin-left: 1em;
-	line-height: 1.2em;
-	background: none;
-}
-
-#p-personal li a {
-	text-decoration: none;
-	color: #005896;
-	padding-bottom: .2em;
-}
-
-#p-personal li a:hover {
-	background-color: white;
-	text-decoration: none;
-}
-
-#p-personal li.active a:hover {
-	background-color: transparent;
-}
-
 /* js pref toc */
 #preftoc {
 	margin: 0;

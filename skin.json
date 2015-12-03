@@ -13,7 +13,7 @@
 		"cleanmonobook": "CleanMonobook"
 	},
 	"ResourceModules": {
-		"skins.cologneblue": {
+		"skins.cleanmonobook": {
 			"position": "top",
 			"styles": {
 				"main.css": { "media": "screen" }

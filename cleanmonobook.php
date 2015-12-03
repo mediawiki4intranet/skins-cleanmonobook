@@ -64,6 +64,15 @@ class CleanmonobookTemplate extends BaseTemplate {
 		?>
 		<div id="globalWrapper">
 		<div id="column-content">
+			<div class="portlet" id="p-personal" role="navigation">
+				<div class="pBody">
+					<ul<?php $this->html( 'userlangattributes' ) ?>>
+						<?php foreach ( $this->getPersonalTools() as $key => $item ) {
+							echo $this->makeListItem( $key, $item );
+						} ?>
+					</ul>
+				</div>
+			</div>
 			<div id="content" class="mw-body" role="main">
 				<a id="top"></a>
 				<?php
